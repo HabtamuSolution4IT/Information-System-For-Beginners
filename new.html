@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+
+<!--- a custom css file link developed by habtish BLACKMAN-->
+<link rel="stylesheet" href="stylee.css"/>
+</head>
+<body>
+
+<h3 class="heading"> SAMARA UNIVERSITY  VIDEOS   </h3>
+<div class="container">
+<div class="main-video">
+<div class="video">
+<video src="Half Life Celebration for Samara University Department Computer Science 3rd year.mp4 "controls muted autoplay> </video>
+<h3 class="title">Samara University news1_360p.mp4 </h3>
+</div>
+</div>
+
+<div class="video-list">
+     <div class="vid active">
+     <video src="Half Life Celebration for Samara University Department Computer Science 3rd year.mp4" muted /></video>
+       <h3 class="title">Samara University1_360p.mp4 </h3>
+</div>
+
+     <div class="vid">
+     <video src="SAMARA UNIVERSITY 50 DAY CELEBRATION,,,,,,,.mp4" muted /></video>
+       <h3 class="title">Samara University1_360p.mp4</h3>
+   </div>
+ <div class="vid">
+     <video src="y2mate.com - Samara University Ethiopia GC 2021_1080p.mp4" muted /></video>
+       <h3 class="title">03.video title goes here </h3>
+</div>
+<div class="vid">
+     <video src="Samara University 50 Days Celebration.mp4" muted /></video>
+       <h3 class="title">Samara University Ethiopia GC 2021_1080p.mp4 </h3>
+</div>
+<div class="vid">
+     <video src="video.mp4" muted ></video>
+       <h3 class="title">Samara university video.mp4 </h3>
+</div>
+<div class="vid">
+     <video src="y2mate.com - ሙቀቱን አልቻልነውም  samara university  Miftah key  Fasika Tube Sualih Vlogs_1080p.mp4" muted ></video>
+       <h3 class="title">ሙቀቱን አልቻልነውም  samara university  Miftah key  Fasika Tube Sualih Vlogs_1080p.mp4 </h3>
+</div>
+<div class="vid">
+     <video src="y2mate.com - ጉዞ ወደ ሰመራ   samara university  todays news_480p.mp4" muted ></video>
+       <h3 class="title">ጉዞ ወደ ሰመራ   samara university  todays news_480p.mp4</h3>
+</div>
+<div class="vid">
+     <video src="y2mate.com - Samara university of Ethiopia_1080p.mp4" muted ></video>
+       <h3 class="title"> Samara university of Ethiopia_1080p.mp4</h3>
+</div>
+
+<div class="vid">
+     <video src="Samara University 50 Days Celebration.mp4" muted ></video>
+       <h3 class="title">Samara University 50 Days Celebration.mp4 </h3>
+</div>
+
+
+</div>
+</div>
+<script>
+
+let listVideo=document .querySelectorAll ('.video-list .vid');
+let mainVideo=document.querySelector('.main-video video');
+let title=document.querySelector('.main-video .title');
+
+listVideo.forEach(video=>{
+video.onclick =( )=>{
+listVideo.forEach(vid=> vid.classList .remove('active'));
+video.classList.add('active');
+if(video.classList.contains('active'))
+{
+let src=video.children[0].getAttribute('src');
+mainVideo .src=src;
+let text=video.children[1].innerHTML;
+title.innerHTML=text;
+ };
+   };
+
+});
+
+
+</script>
+
+
+</body>
+</html>
+
+
+
+
+

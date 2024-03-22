@@ -1,0 +1,35 @@
+#dialogoverlay{
+display:none;
+opacity:.8;
+position:fixed;
+top:0px;
+left:0px;
+background:#fff;
+width:100%
+z-width:10;
+}
+
+#dialogbox{
+display:none;
+position:fixed;
+border-radius:7px;
+background:#000;
+width:550%
+z-index:10;	
+}
+
+#dialogbox>div{background:#fff;margin:8px;}
+#dialogbox>div>#dialogboxhead{background:#666;font-size:19px;padding:10px;color:#ccc;}
+#dialogbox>div>#dialogboxbody{background:#333;padding:20px;color:#FFF;}
+#dialogbox>div>#dialogboxbody{background:#666;padding:10px;text-align:right;}
+body{
+	background:#23E3C9;
+	border:dashed;
+	border-color:GREEN red blue greenyellow;
+	
+}
+h1,h2{
+	font-family:algerian;
+	color:red;
+	}
+	
